@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { EventManager } from '@angular/platform-browser';
 import { Product } from '../products.module';
 
 @Component({
@@ -8,7 +9,8 @@ import { Product } from '../products.module';
 })
 export class ProductAlertsComponent {
 
-  @Input() product!: Product
+  @Input() product!: Product;
+  @Output() notify = new EventEmitter();
 
 
 }
