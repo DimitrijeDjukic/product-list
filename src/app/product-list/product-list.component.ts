@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { products } from '../products.module';
+import { productss } from '../products.module';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { products } from '../products.module';
 })
 export class ProductListComponent {
 
-  products = products;
+  products = productss;
 
   share() {
     window.alert('The product has been shared!');
